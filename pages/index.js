@@ -59,7 +59,7 @@ export default function Index() {
           <h2 className="text-transparent font-bold text-xl pt-4">LAN-Partys</h2>
           <p className="text-gray-100">We visit LAN-Partys all over switzerland.</p>
           <h2 className="text-transparent font-bold text-xl pt-4">Socials</h2>
-          <p className="text-gray-100 mb-4 sm:mb-8">
+          <p className="text-gray-100 mb-4 sm:mb-8 md:mb-16">
             We are on Instagram, Twitter, Facebook and YouTube. Check them out via the links in the
             footer.
           </p>
