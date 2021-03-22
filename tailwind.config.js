@@ -1,9 +1,12 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ['./pages/**/*.jsx', './components/**/*.jsx'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    aspectRatio: {
+      '16/9': [16, 9]
+    },
     extend: {
       colors: {
         gray: colors.trueGray,
@@ -95,7 +98,8 @@ module.exports = {
     }
   },
   variants: {
+    aspectRatio: ['responsive'], // defaults to ['responsive']
     extend: {}
   },
-  plugins: []
+  plugins: [require('tailwindcss-aspect-ratio')]
 };

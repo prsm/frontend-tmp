@@ -2,7 +2,7 @@ import FooterLink from '@components/footerLink';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-start p-4">
+    <footer className="flex flex-col justify-start p-4 sm:p-10 2 md:px-32">
       <FooterLink
         link="https://www.youtube.com/channel/UCznZLeq9xjmx-uyVRvx8yug"
         src="/socials/youtube.svg"

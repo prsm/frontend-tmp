@@ -14,17 +14,17 @@ export default function Index() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Nav />
-      <main className="p-4 pt-6 bg-gray-700">
+      <main className="p-4 pt-6 sm:p-10 sm:py-12 md:px-32 md:py-10 bg-gray-700">
         <GradientBackground className="bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
-          <h1 className="text-gray-100 font-extrabold text-2xl ">
-            We are <span className="text-transparent text-3xl">PR1SM</span>
+          <h1 className="text-gray-100 font-extrabold text-3xl ">
+            We are <span className="text-transparent text-4xl">PR1SM</span>
           </h1>
-          <h2 className="text-transparent font-bold text-lg pt-4">What we do</h2>
+          <h2 className="text-transparent font-bold text-xl pt-4">What we do</h2>
           <p className="text-gray-100">
             We play lot&apos;s of different games from mainstream games like{' '}
             <HighlightedText>CSGO</HighlightedText>, <HighlightedText>Call of Duty</HighlightedText>{' '}
             and <HighlightedText>League of Legends</HighlightedText> to old classics like{' '}
-            <HighlightedText>Age of Empires 4</HighlightedText>. But don&apos;t worry if these
+            <HighlightedText>Age of Empires 2</HighlightedText>. But don&apos;t worry if these
             aren&apos;t for you we have a wide variety of new and old games.
             <p className="text-gray-100">
               Our main language is <Emoji emoji="🇨🇭" a11yDescription="switzerland flag" />
@@ -56,14 +56,17 @@ export default function Index() {
             </p>
             <p className="text-gray-100"></p>
           </p>
-          <h2 className="text-transparent font-bold text-lg pt-4">LAN-Partys</h2>
+          <h2 className="text-transparent font-bold text-xl pt-4">LAN-Partys</h2>
           <p className="text-gray-100">We visit LAN-Partys all over switzerland.</p>
-          <h2 className="text-transparent font-bold text-lg pt-4">Socials</h2>
-          <p className="text-gray-100">
+          <h2 className="text-transparent font-bold text-xl pt-4">Socials</h2>
+          <p className="text-gray-100 mb-4 sm:mb-8">
             We are on Instagram, Twitter, Facebook and YouTube. Check them out via the links in the
             footer.
           </p>
-          <VideoEmbed title={'ISLE OF LAN 2020'} />
+          <VideoEmbed
+            title="ISLE OF LAN 2020"
+            url="https://www.youtube-nocookie.com/embed/2FNdp4lEtSw"
+          />
         </GradientBackground>
       </main>
       <Footer />
