@@ -1,3 +1,4 @@
+import HighlightedText from '@components/highlightedText';
 import Link from 'next/link';
 
 export default function NavLink(properties) {
@@ -5,7 +6,7 @@ export default function NavLink(properties) {
   return (
     <div>
       <Link href={href}>
-        <p className="text-transparent text-lg font-bold cursor-pointer">{text}</p>
+        <HighlightedText className="text-lg font-bold cursor-pointer">{text}</HighlightedText>
       </Link>
     </div>
   );

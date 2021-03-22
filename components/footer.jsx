@@ -26,7 +26,7 @@ export default function Footer() {
       />
       <FooterLink link="https://www.twitch.tv/pr1sm_gg" src="/socials/twitch.svg" name="Twitch" />
       <FooterLink link="https://github.com/prsm" src="/socials/github.svg" name="GitHub" />
-      <p className="text-white pt-6 text-sm">
+      <p className="text-gray-100 pt-6 text-sm">
         <span role="img" aria-label="copyright">
           ©️
         </span>{' '}

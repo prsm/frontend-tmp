@@ -1,5 +1,9 @@
+import Emoji from '@components/emoji';
 import Footer from '@components/footer';
-import Nav from '@components/Nav';
+import GradientBackground from '@components/gradientBackground';
+import HighlightedText from '@components/highlightedText';
+import Nav from '@components/nav';
+import VideoEmbed from '@components/videoEmbed';
 import Head from 'next/head';
 
 export default function Index() {
@@ -11,38 +15,31 @@ export default function Index() {
       </Head>
       <Nav />
       <main className="p-4 pt-6 bg-gray-700">
-        <div className="bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
-          <h1 className="text-white font-extrabold text-2xl ">
+        <GradientBackground className="bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
+          <h1 className="text-gray-100 font-extrabold text-2xl ">
             We are <span className="text-transparent text-3xl">PR1SM</span>
           </h1>
           <h2 className="text-transparent font-bold text-lg pt-4">What we do</h2>
-          <p className="text-white">
+          <p className="text-gray-100">
             We play lot&apos;s of different games from mainstream games like{' '}
-            <span className="font-bold text-transparent">CSGO</span>,{' '}
-            <span className="font-bold text-transparent">Call of Duty</span> and{' '}
-            <span className="font-bold text-transparent">League of Legends</span> to old classics
-            like <span className=" font-bold text-transparent">Age of Empires 4</span>. But
-            don&apos;t worry if these aren&apos;t for you we have a wide variety of new and old
-            games.
-            <p className="text-white">
-              Our main language is{' '}
-              <span role="img" aria-label="switzerland flag">
-                🇨🇭
-              </span>
+            <HighlightedText>CSGO</HighlightedText>, <HighlightedText>Call of Duty</HighlightedText>{' '}
+            and <HighlightedText>League of Legends</HighlightedText> to old classics like{' '}
+            <HighlightedText>Age of Empires 4</HighlightedText>. But don&apos;t worry if these
+            aren&apos;t for you we have a wide variety of new and old games.
+            <p className="text-gray-100">
+              Our main language is <Emoji emoji="🇨🇭" a11yDescription="switzerland flag" />
               Swiss-German, however most of us speak{' '}
-              <span role="img" aria-label="switzerland flag">
-                🇬🇧
-              </span>
+              <Emoji emoji="🇬🇧" a11yDescription="united kingdom flag" />
               English so feel welcome to join us whatever you feel comfortable speaking.
             </p>
-            <p className="text-white">
+            <p className="text-gray-100">
               We host lot&apos;s of online and real-life events. There are weekly and bi-weekly
               events that are popular. We also host spontaneous events in new game-modes or new
               games. If you want to know more about upcoming events check our discord server. All
               events will appear in our <span className=" font-bold text-transparent">#events</span>{' '}
               channel
             </p>
-            <p className="text-white">
+            <p className="text-gray-100">
               Most of our communication is done over discord,{' '}
               <span className="text-transparent">
                 after you accept our rules you will have access to the whole server
@@ -52,21 +49,22 @@ export default function Index() {
               this text-channels will appear for the roles you have assigned yourself. We also have
               channels for non-gaming topics, like general, tech, memes, anime and many more.
             </p>
-            <p className="text-white">
+            <p className="text-gray-100">
               Dynamic voice channels are now available, where you can hang out with your friends.
               When you join a voice channel a new one will be created there will always be one empty
               however feel free to connect to one and chat with us.
             </p>
-            <p className="text-white"></p>
+            <p className="text-gray-100"></p>
           </p>
           <h2 className="text-transparent font-bold text-lg pt-4">LAN-Partys</h2>
-          <p className="text-white">We visit LAN-Partys all over switzerland.</p>
+          <p className="text-gray-100">We visit LAN-Partys all over switzerland.</p>
           <h2 className="text-transparent font-bold text-lg pt-4">Socials</h2>
-          <p className="text-white">
+          <p className="text-gray-100">
             We are on Instagram, Twitter, Facebook and YouTube. Check them out via the links in the
             footer.
           </p>
-        </div>
+          <VideoEmbed title={'ISLE OF LAN 2020'} />
+        </GradientBackground>
       </main>
       <Footer />
     </div>
