@@ -1,14 +1,22 @@
-import CustomHead from '@components/customHead';
-import Footer from '@components/footer';
-import Nav from '@components/nav';
+import fs from 'fs';
 
-export default function Index() {
+export async function getStaticProps() {
+  const fileNames = fs.readdirSync("content");
+  console.log(fileNames)
+  return {
+    props: {
+      fileNames
+    }
+  }
+}
+
+export default function Index(props) {
+
+  const files = props.fileNames
+  console.log(files)
   return (
     <div>
-      <CustomHead title="PR1SM - Blog" />
-      <Nav></Nav>
-      <h1>Blog page</h1>
-      <Footer></Footer>
+      <h1>{files}</h1>
     </div>
   );
 }

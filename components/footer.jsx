@@ -2,7 +2,8 @@ import FooterLink from '@components/footerLink';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-start p-4 sm:p-10 2 md:px-32">
+    <footer className="p-4 sm:p-10 2 md:px-32">
+      <div className="flex flex-col justify-start md:flex-row md:space-x-2 md:justify-center">
       <FooterLink
         link="https://www.youtube.com/channel/UCznZLeq9xjmx-uyVRvx8yug"
         src="/socials/youtube.svg"
@@ -26,7 +27,8 @@ export default function Footer() {
       />
       <FooterLink link="https://www.twitch.tv/pr1sm_gg" src="/socials/twitch.svg" name="Twitch" />
       <FooterLink link="https://github.com/prsm" src="/socials/github.svg" name="GitHub" />
-      <p className="text-gray-100 pt-6 text-sm">
+      </div>
+      <p className="text-gray-100 pt-4 text-sm md:text-center">
         <span role="img" aria-label="copyright">
           ©️
         </span>{' '}
