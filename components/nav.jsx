@@ -14,7 +14,7 @@ export default function Nav() {
           <NavLink text="About us" href="/about" />
           <NavLink text="Events" href="/events" />
           <NavLink text="Blog" href="/blog" />
-          <NavLink text="Join PR1SM" href="/entry-form" />
+          <NavLink text="Join PR1SM" href="/entry" />
         </nav>
       </GradientBackground>
     </div>
