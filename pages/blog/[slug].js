@@ -7,17 +7,21 @@ function BlogTemplate({ content, data }) {
   const markdowndata = data;
 
   return (
-    <div className="text-center">
+    <div className="markdown container mx-auto ">
       <h1>{markdowndata.title}</h1>
-      <ReactMarkdown children={content}/>
+      <article className=" prose prose-sm sm:prose lg:prose-lg xl:prose-xl ">
+      <ReactMarkdown
+        children={content}
+      />
+      </article>
     </div>
-  )
+  );
 }
 
 BlogTemplate.getInitialProps = async (context) => {
   const { slug } = context.query
 
-  const content = await import(`../../content/${slug}.md`)
+  const content = await import(`../../resources/content/${slug}.md`)
 
   const data = matter(content.default)
 
