@@ -11,10 +11,8 @@ export default function Nav() {
       <GradientBackground>
         <nav className="flex flex-row justify-between pt-6">
           <NavLink text="Home" href="/" />
-          <NavLink text="About us" href="/about" />
-          <NavLink text="Events" href="/events" />
-          <NavLink text="Blog" href="/blog" />
-          <NavLink text="Join PR1SM" href="/entry" />
+          <NavLink text="Esport teams" href="/esport" />
+          <NavLink text="Entry form" href="/entry-form" />
         </nav>
       </GradientBackground>
     </div>
