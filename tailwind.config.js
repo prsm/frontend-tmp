@@ -8,39 +8,6 @@ module.exports = {
       '16/9': [16, 9]
     },
     extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            color: '#fff',
-            a: {
-              color: '',
-
-            },
-            h1:{
-              color: 'fbf8ff'
-            },
-            h2:{
-              color: 'fbf8ff'
-            },
-            h3:{
-              color: 'fbf8ff'
-            },
-            h4:{
-              color: 'fbf8ff'
-            },
-            strong:{
-              color: 'fbf8ff'
-            },
-            blockquote:{
-              color: 'fbf8ff'
-            },
-            code: {
-              color: 'fbf8ff'
-            }
-          },
-        },
-      },
-
       colors: {
         gray: colors.trueGray,
         'pr1sm-heliotrope': {
@@ -134,8 +101,5 @@ module.exports = {
     aspectRatio: ['responsive'], // defaults to ['responsive']
     extend: {}
   },
-  plugins: [require('tailwindcss-aspect-ratio'),
-  require('@tailwindcss/typography')
-  // ...
-]
+  plugins: [require('tailwindcss-aspect-ratio')]
 };
