@@ -1,23 +1,21 @@
 
 
-export default function EventPreview({ name, id, description, type }){
-
-
+export default function blogPreview(props){
   return(
-    <div>
-      <div className="mt-10 py-1 bg-gradient-to-r from-red-400 via-pink-400 to-blue-500 rounded max-w-xl mx-auto">
-        <div className="pt-1 bg-gray-700">
-          <div className="font-bold text-lg text-white">
-            <p>{name}</p>
-          </div>
-          <div className="relative">
-            <h1>{name}</h1>
-            <p>{description}</p>
-            <p>{id}</p>
-            <p>{type}</p>
-          </div>
+    <a href= { "/events/" + props.name }>
+      <div className="max-w-md py-4 px-8 bg-gray-800 shadow-lg rounded-lg my-20 ">
+        <div className="flex justify-center md:justify-end -mt-16">
+          <img className="w-20 h-20 object-cover rounded-full border-2 2xl:border-pr1sm-carnation-600"
+               src={props.imageSrc}></img>
+        </div>
+        <div>
+          <h2 className="text-gray-200 text-3xl font-semibold">{props.name}</h2>
+          <p className="mt-2 text-gray-100">{props.shortDesc}</p>
+        </div>
+        <div className="flex justify-end mt-4">
+          <a href="" className="text-xl font-medium text-gray-100">{props.author}</a>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

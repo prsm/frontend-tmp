@@ -1,5 +1,6 @@
 import Emoji from '@components/emoji';
 import HighlightedText from '@components/highlightedText';
+import Image from 'next/image'
 
 
 export default function Index() {
@@ -8,6 +9,15 @@ export default function Index() {
         <h1 className="text-gray-100 font-extrabold text-3xl text-center ">
           We are <span className="text-transparent text-4xl">PR1SM</span>
         </h1>
+
+      <Image
+        src="/../../resources/images/group.jpg"
+        alt="PR1SM group picture"
+        width={500}
+        height={500}
+      />
+
+
         <h2 className="text-transparent font-bold text-xl pt-4">What we do</h2>
         <p className="text-gray-100">
           We play lot&apos;s of different games from mainstream games like{' '}

@@ -1,13 +1,27 @@
-import data from 'pages/events/eventdata/data.json'
-import EventPreview from '@components/eventPreview';
+import fs from 'fs';
+import EventPreview from 'components/eventPreview';
 
-export default function Index() {
-const events = data.event;
-return (
-      <div>
-        {
-          events.map((el, index )=> <EventPreview name={el.name} description={el.description} id={el.id} type={el.type}  key={index} />       )
-        }
-      </div>
+export async function getStaticProps() {
+  const fileNames = fs.readdirSync("resources/content/events");
+
+  for (const index in fileNames) {
+    fileNames[index] = fileNames[index].slice(0,-3);
+  }
+
+  return {
+    props: {
+      fileNames
+    }
+  }
+}
+
+
+export default function Index(props) {
+  return (
+    <div>
+      {props.fileNames.map(function(name, index){
+        return <EventPreview key={ index } name={ name } imageSrc="https://schooloflanguages.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq-300x300.jpg" shortDesc="This a description of a blog"/>;
+      })}
+    </div>
   );
 }

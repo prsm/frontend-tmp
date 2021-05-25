@@ -21,7 +21,7 @@ function BlogTemplate({ content, data }) {
 BlogTemplate.getInitialProps = async (context) => {
   const { slug } = context.query
 
-  const content = await import(`../../resources/content/${slug}.md`)
+  const content = await import(`../../resources/content/blog/${slug}.md`)
 
   const data = matter(content.default)
 

@@ -2,7 +2,7 @@ import fs from 'fs';
 import BlogPreview from 'components/blogPreview';
 
 export async function getStaticProps() {
-  const fileNames = fs.readdirSync("resources/content");
+  const fileNames = fs.readdirSync("resources/content/blog");
 
   for (const index in fileNames) {
     fileNames[index] = fileNames[index].slice(0,-3);

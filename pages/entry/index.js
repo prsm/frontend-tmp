@@ -1,4 +1,5 @@
-import SendEmail from './sendEmail';
+import EntryForm from './EntryForm';
+import Form from './Form';
 
 export default function Index() {
   return (
@@ -6,7 +7,8 @@ export default function Index() {
       <h1 className="text-gray-100 font-bold text-3xl text-center">
         Join <span className="text-transparent text-4xl">PR1SM</span>
       </h1>
-      <SendEmail/>
+
+      <EntryForm />
     </div>
   );
 }
