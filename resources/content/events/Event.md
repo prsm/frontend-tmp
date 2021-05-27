@@ -1,7 +1,11 @@
 ---
-title: "Event"
+title: "LAN2k20"
 date: "2021/05/18"
+description: "Cool reallife event"
+reallife: false
+image: "covid.png"
 ---
+
 
 # h1 Heading 8-)
 ## h2 Heading

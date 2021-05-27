@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^0.3.6",
+    "@heroicons/react": "^1.0.1",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
     "emailjs-com": "^2.6.4",

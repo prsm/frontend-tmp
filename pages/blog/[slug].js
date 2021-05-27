@@ -1,33 +1,29 @@
-import React from 'react'
+import React from 'react';
 import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
 function BlogTemplate({ content, data }) {
-
   const markdowndata = data;
 
   return (
-    <div className="markdown container mx-auto ">
-      <h1>{markdowndata.title}</h1>
+    <div className="markdown container mx-auto text-center content-center w-1/2">
       <article className=" prose prose-sm sm:prose lg:prose-lg xl:prose-xl ">
-      <ReactMarkdown
-        children={content}
-      />
+        <ReactMarkdown children={content} />
       </article>
     </div>
   );
 }
 
-BlogTemplate.getInitialProps = async (context) => {
-  const { slug } = context.query
+BlogTemplate.getInitialProps = async context => {
+  const { slug } = context.query;
 
-  const content = await import(`../../resources/content/blog/${slug}.md`)
+  const content = await import(`../../resources/content/blog/${slug}.md`);
 
-  const data = matter(content.default)
+  const data = matter(content.default);
 
-  return { ...data }
+  return { ...data };
 
-  return { slug }
-}
+  return { slug };
+};
 
-export default BlogTemplate
+export default BlogTemplate;
