@@ -32,7 +32,7 @@ export default function Index(props) {
               key={index}
               name={blog.filename}
               filename={blog.filename}
-              imageSrc={blog.author ? 'images/' + blog.author + '.jpg' : ''}
+              imageSrc={blog.author ? 'images/authors/' + blog.author + '.png' : ''}
               shortDesc={blog.description}
               image={blog.image}
             />

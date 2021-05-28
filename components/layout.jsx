@@ -8,9 +8,9 @@ export default function Layout({ children }) {
     <div className="min-h-screen">
       <CustomHead />
       <Nav />
-      <main className="p-4 pt-6 sm:p-10 sm:py-12 md:px-32 md:py-10 bg-gray-700 text-gray-100">
+      <main className="bg-gray-700 text-gray-100 ">
         <GradientBackground className="bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
-        {children}
+          {children}
         </GradientBackground>
       </main>
       <Footer />

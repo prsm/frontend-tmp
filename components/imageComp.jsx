@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function ImageComp(props) {
   return (
-    <div className="py-1 rounded mx-auto w-1/2 mt-4 relative h-96 ">
+    <div className="py-1 rounded mx-auto w-1/2 mt-2 relative h-full w-full">
       <Image
         src={props.src}
         alt={props.alt}

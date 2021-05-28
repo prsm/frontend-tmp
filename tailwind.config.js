@@ -7,38 +7,44 @@ module.exports = {
     aspectRatio: {
       '16/9': [16, 9]
     },
+    backdropFilter: {
+      none: 'none',
+      blur: 'blur(10px)'
+    },
     extend: {
+      backgroundImage: theme => ({
+        'main-image': "url('/images/nicola.png')"
+      }),
       typography: {
         DEFAULT: {
           css: {
             color: '#fff',
             a: {
-              color: '',
-
+              color: ''
             },
-            h1:{
+            h1: {
               color: 'fbf8ff'
             },
-            h2:{
+            h2: {
               color: 'fbf8ff'
             },
-            h3:{
+            h3: {
               color: 'fbf8ff'
             },
-            h4:{
+            h4: {
               color: 'fbf8ff'
             },
-            strong:{
+            strong: {
               color: 'fbf8ff'
             },
-            blockquote:{
+            blockquote: {
               color: 'fbf8ff'
             },
             code: {
               color: 'fbf8ff'
             }
-          },
-        },
+          }
+        }
       },
 
       colors: {
@@ -134,8 +140,10 @@ module.exports = {
     aspectRatio: ['responsive'], // defaults to ['responsive']
     extend: {}
   },
-  plugins: [require('tailwindcss-aspect-ratio'),
-  require('@tailwindcss/typography')
-  // ...
-]
+  plugins: [
+    require('tailwindcss-aspect-ratio'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-filters')
+    // ...
+  ]
 };

@@ -5,14 +5,14 @@ import ImageComp from '@components/imageComp';
 export default function HomeArticle() {
   return (
     <div>
-      <h2 className="text-transparent font-bold text-xl pt-10">What we do</h2>
-      <div className="text-gray-100">
+      <h2 className="text-transparent font-bold text-3xl text-center  pt-10">What we do</h2>
+      <div className="text-gray-100 text-lg mt-1">
         We play lot&apos;s of different games from mainstream games like{' '}
         <HighlightedText>CSGO</HighlightedText>, <HighlightedText>Call of Duty</HighlightedText> and{' '}
         <HighlightedText>League of Legends</HighlightedText> to old classics like{' '}
         <HighlightedText>Age of Empires 2</HighlightedText>. But don&apos;t worry if these
         aren&apos;t for you we have a wide variety of new and old games.
-        <p className="text-gray-100">
+        <p className="text-gray-100 mt-5">
           Our main language is <Emoji emoji="🇨🇭" a11yDescription="switzerland flag" />
           Swiss-German, however most of us speak{' '}
           <Emoji emoji="🇬🇧" a11yDescription="united kingdom flag" />
@@ -21,7 +21,7 @@ export default function HomeArticle() {
         <ImageComp
           src="/images/groupPicture.png"
           alt="PR1SM group picture"
-          className="inline-block"
+          className="inline-block w-96 h-96"
         />
         <p className="text-gray-100">
           We host lot&apos;s of online and real-life events. There are weekly and bi-weekly events
@@ -29,7 +29,7 @@ export default function HomeArticle() {
           want to know more about upcoming events check our discord server. All events will appear
           in our <span className=" font-bold text-transparent">#events</span> channel
         </p>
-        <p className="text-gray-100">
+        <p className="text-gray-100 mt-5">
           Most of our communication is done over discord,{' '}
           <span className="text-transparent">
             after you accept our rules you will have access to the whole server

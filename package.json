@@ -47,7 +47,8 @@
     "react-spring": "^8.0.27",
     "swr": "^0.4.0",
     "tailwindcss": "^2.0.2",
-    "tailwindcss-aspect-ratio": "^3.0.0"
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
