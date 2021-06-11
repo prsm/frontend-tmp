@@ -9,9 +9,12 @@ module.exports = {
     },
     backdropFilter: {
       none: 'none',
-      blur: 'blur(10px)'
+      blur: 'blur(25px)'
     },
     extend: {
+      fontFamily: {
+        'work-sans': ['"Work Sans"', 'cursive']
+      },
       backgroundImage: theme => ({
         'main-image': "url('/images/nicola.png')"
       }),

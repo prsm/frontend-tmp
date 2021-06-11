@@ -21,15 +21,15 @@ export async function getStaticProps() {
 
 export default function Index(props) {
   return (
-    <div>
-      <h1 className="text-gray-100 font-bold text-3xl text-center">
+    <div className="pt-32 mx-auto text-center content-center">
+      <h1 className="text-gray-100 font-bold text-3xl ">
         Events at <span className="text-transparent text-4xl">PR1SM</span>
       </h1>
-      <article>
+      <article className="text-lg">
         PR1SM attends and hosts a variety of events throughout the year. Here are some of the most
         important ones. If your looking to join smaller online events visit our Discord.
       </article>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 pl-32 pr-32">
         {props.arr.map(function (event, index) {
           console.log(event);
           return (

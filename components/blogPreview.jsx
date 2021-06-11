@@ -14,7 +14,7 @@ export default function blogPreview(props) {
           <h2 className="text-gray-200 text-3xl font-semibold">{props.name.replace(/_/g, ' ')}</h2>
           <p className="mt-2 text-gray-100">{props.shortDesc}</p>
           {props.image ? (
-            <ImageComp src={'/images/blog/' + props.image} alt="Image" />
+            <ImageComp src={'/images/blog/' + props.image} alt="Image" width="300" height="300" />
           ) : (
             <div></div>
           )}

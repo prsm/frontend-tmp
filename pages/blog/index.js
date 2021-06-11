@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 export default function Index(props) {
   return (
-    <div>
+    <div className="pt-32">
       <h1 className="text-gray-100 font-bold text-3xl text-center">
         <span className="text-transparent text-4xl">Blog</span>
       </h1>

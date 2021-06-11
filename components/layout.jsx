@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen">
       <CustomHead />
       <Nav />
-      <main className="bg-gray-700 text-gray-100 ">
+      <main className="bg-gray-700 text-gray-100 work-sans">
         <GradientBackground className="bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
           {children}
         </GradientBackground>
